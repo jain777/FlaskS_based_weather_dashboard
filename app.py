@@ -3,8 +3,9 @@ import configparser
 from  flask import Flask ,render_template, request
 
 # uique identifier for the flask session 
-app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+
 app = Flask(__name__)
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 @app.route('/')
 def weather_dashboard():
